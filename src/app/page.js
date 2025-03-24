@@ -43,12 +43,12 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center">
-          <p className="text-4xl p-10 pt-0 lg:pt-15 w-[90%] lg:w-[100%]">
+        <div className="flex flex-col justify-center items-center text-center">
+          <p className="text-4xl p-3 pb-9 md:p-10 pt-0 lg:pt-15 w-[90%] lg:w-[100%]">
             At the moment, I am crafting eye- catching, user-loved things at
             Pudding Studio.
           </p>
-          <p className="text-xl p-10 pt-0 w-[90%] lg:w-[100%]">
+          <p className="p-3 text-xl lg:p-10 pt-0 w-[90%] lg:w-[100%]">
             Pudding is a small, family-run studio. It is formed by two of us, my
             spouse Jelena and me. The primary focus for our studio is close
             collaboration with product startups and their progressive growth.
