@@ -56,7 +56,7 @@ export default function Home() {
         </div>
       </div>
       <div className="text-center p-5 lg:p-45 mt-30">
-        <h2 className="text-7xl">
+        <h2 className="text-5xl md:text-7xl">
           I helped TextNow establish its brand presence while making it widely
           recognizable.
         </h2>
