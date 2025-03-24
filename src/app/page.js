@@ -11,7 +11,7 @@ export default function Home() {
     <div className={`${apple.className}`}>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 relative overflow-hidden mb-10">
         <div>
-          <h1 className="text-5xl p-11 md:text-9xl lg:p-20">
+          <h1 className="text-6xl p-11 md:text-9xl lg:p-20">
             <span className="block">Chic. </span>And Geek
           </h1>
           <p className="text-2xl lg:text-4xl p-10 pt-0">
