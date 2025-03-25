@@ -61,6 +61,32 @@ export default function Home() {
           recognizable.
         </h2>
       </div>
+      <div className="mt-10 mb-10 md:mt-20 flex justify-center items-center">
+        <div className="w-[90%] aspect-square md:w-[80%] lg:h-[90vh] rounded-2xl overflow-hidden">
+          <div
+            className="w-full h-full relative"
+            style={{
+              backgroundColor: "#899ef5",
+              backgroundImage:
+                "radial-gradient(circle at 0 100%, #ff9061 47%, #fff0 52%), radial-gradient(circle at 100% 0, #ffade4, #d2ffbc00 66%)",
+            }}
+          >
+            <div className="absolute -right-20 top-1/2 -translate-y-1/2 px-4 py-4 rounded-3xl border border-white/30 bg-white/20 backdrop-blur-xl shadow-lg">
+              <Image
+                className="w-auto h-[120px] md:h-[160px] lg:h-[200px] "
+                src="/images/img3.png"
+                width={345}
+                height={100}
+                alt="image"
+                style={{
+                  filter: "drop-shadow(0 4px 6px rgba(0,0,0,0.1))",
+                  objectFit: "contain",
+                }}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
