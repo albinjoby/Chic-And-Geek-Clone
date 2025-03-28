@@ -139,7 +139,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row-reverse mb-40">
+      <div className="flex flex-col md:flex-row-reverse mb-20">
         <div>
           <div className="w-[300px]">
             <div className="ml-10 md:pt-10 md:ml-0 md:mr-12 border-b-2 border-black/50 md:border-none inline-flex md:w-[150px]">
@@ -164,6 +164,30 @@ export default function Home() {
             many ideas and improvements, some of which are already producing
             excellent results.
           </p>
+        </div>
+      </div>
+      <div className="bg-black text-white md:m-10 md:rounded-2xl">
+        <div className="flex flex-col md:flex-row">
+          <div className="p-10 md:pr-0 md:pt-15">
+            <Image
+              className="md:size-50 lg:size-35"
+              src="/images/medal.svg"
+              alt="images"
+              height={150}
+              width={100}
+            />
+          </div>
+          <div className="p-10 pt-0 md:pt-15">
+            <h2 className="text-4xl md:text-6xl">Statement of the jury</h2>
+            <p className="text-gray-300 mt-5 md:text-2xl">
+              This elaborate website integrates all of the company&apos;s
+              product communication into a single portal, thus providing a
+              seamless customer experience. The site&apos;s design is of
+              superior quality and reflects the brand&apos;s core values down to
+              the last detail, from the standpoint of form, content and
+              technical realisation.
+            </p>
+          </div>
         </div>
       </div>
     </main>
