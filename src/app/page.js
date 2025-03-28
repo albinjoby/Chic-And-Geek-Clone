@@ -107,6 +107,7 @@ export default function Home() {
           </div>
           <div className="w-full h-full bg-gray-100 flex items-center justify-center">
             <svg
+            style={{ width: "10vw", height: "10vh" }}
               width="72"
               height="65"
               viewBox="0 0 72 65"
