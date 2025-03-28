@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         apple: ["var(--font-apple)"],
+        myriad: ["var(--font-myriad)"],
       },
     },
   },
