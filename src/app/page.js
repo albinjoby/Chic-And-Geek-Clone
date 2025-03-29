@@ -436,10 +436,39 @@ export default function Home() {
               width={100}
             />
           </div>
-          <h2 className="text-center text-4xl md:text-6xl lg:text-7xl">
-            Icons, Pictograms and KDE. Yep, that&apos;s how it started.
+          <h2 className="text-center text-4xl md:text-6xl lg:text-7xl font-medium">
+            Icons, Pictograms and KDE.<br></br> Yep, that&apos;s how it started.
           </h2>
         </div>
+      </div>
+      {/* ------ Pictograms ------- */}
+      <div className="flex flex-col items-center justify-center text-center">
+        <h2 className="text-5xl md:text-6xl p-10 pb-0">Pictograms for Volkswagen</h2>
+        <p className={`${myriad.className} p-10 pt-5 pb-0 md:p-20 md:pt-15`}>
+          Shiny icons were my start, but the technique of converting them to
+          line art seemed easy. Conveying a message through a glyph and making a
+          family in which each one is consistent and recognizable are still the
+          most significant challenges I can face... yet, at the same time, these
+          are some of my favorite projects. I am showing you one part of the
+          pictogram family that I worked on for Volkswagen (during my time at
+          IBM iX). What brings me to this particular set is the fact that it
+          went to production, and basically, every employee at VW has them in
+          front of their eyes.
+        </p>
+        <Image
+          className="p-10 lg:hidden"
+          src="/images/picto-sm.svg"
+          alt="icon"
+          height={500}
+          width={500}
+        />
+        <Image
+          className="p-10 hidden lg:block"
+          src="/images/picto-lg.svg"
+          alt="icon"
+          height={800}
+          width={800}
+        />
       </div>
     </main>
   );
