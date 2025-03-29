@@ -5,6 +5,8 @@ import plane2 from "/public/images/plane2.svg";
 import plane3 from "/public/images/plane3.svg";
 import plane4 from "/public/images/plane4.svg";
 import plane5 from "/public/images/plane5.svg";
+import lowes from "/public/images/lowes.svg";
+import ipad from "/public/images/ipad.svg";
 
 const apple = localFont({
   src: "../../public/fonts/AppleGaramond-Light.ttf",
@@ -37,6 +39,7 @@ const images = [
 export default function Home() {
   return (
     <main className={`${apple.className}`}>
+      {/* ------ intro1 ------ */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 relative overflow-hidden mb-10">
         <div>
           <h1 className="text-6xl p-11 md:text-9xl lg:p-20">
@@ -59,6 +62,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* ------ intro2 ------ */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 relative overflow-hidden">
         <div className="p-10">
           <div className="p-12 pb-0 pt-20 bg-gray-100 rounded-4xl">
@@ -83,12 +87,14 @@ export default function Home() {
           </p>
         </div>
       </div>
+      {/* ------ para ----- */}
       <div className="text-center p-5 lg:p-45 mt-30">
         <h2 className="text-5xl md:text-7xl">
           I helped TextNow establish its brand presence while making it widely
           recognizable.
         </h2>
       </div>
+      {/* ------ mac dock ------- */}
       <div className="mt-10 mb-10 md:mt-20 flex justify-center items-center">
         <div className="w-[90%] aspect-square md:w-[80%] lg:h-[90vh] rounded-2xl overflow-hidden">
           <div
@@ -133,6 +139,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* ----- vintage computer collash ----- */}
       <div className="flex flex-col m-10 mb-30">
         <div>
           <h2 className="text-center text-4xl md:text-5xl mb-10">
@@ -443,7 +450,10 @@ export default function Home() {
       </div>
       {/* ------ Pictograms ------- */}
       <div className="flex flex-col items-center justify-center text-center">
-        <h2 className="text-5xl md:text-6xl p-10 pb-0">Pictograms for Volkswagen</h2>
+        <div className="w-[80%] border-1 border-black/20 mb-10"></div>
+        <h2 className="text-5xl md:text-6xl p-10 pb-0">
+          Pictograms for Volkswagen
+        </h2>
         <p className={`${myriad.className} p-10 pt-5 pb-0 md:p-20 md:pt-15`}>
           Shiny icons were my start, but the technique of converting them to
           line art seemed easy. Conveying a message through a glyph and making a
@@ -469,6 +479,34 @@ export default function Home() {
           height={800}
           width={800}
         />
+      </div>
+      {/* ------- ipad ----- */}
+      <div className="m-10">
+        <div className="flex justify-center items-center">
+          <div className="flex">
+            <div>
+              <Image
+                className="md:size-60 pt-18 md:p-0"
+                src="/images/lowes.svg"
+                alt="icon"
+                height={100}
+                width={100}
+              />
+            </div>
+            <div>
+              <h2 className="text-6xl md:text-9xl pl-3 pt-17">for iPad.</h2>
+            </div>
+          </div>
+        </div>
+        <div className="mt-10">
+          <Image
+            className="h-full w-full md:pl-10 md:pr-10"
+            src="/images/ipad.svg"
+            alt="icon"
+            height={10}
+            width={10}
+          />
+        </div>
       </div>
     </main>
   );
