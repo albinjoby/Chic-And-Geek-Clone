@@ -279,7 +279,9 @@ export default function Home() {
             />
           </div>
           <div className="p-4 text-center">
-            <h2 className="text-3xl mb-5">Bundesliga Sportcast Media Hub</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl mb-5 md:pb-10">
+              Bundesliga Sportcast Media Hub
+            </h2>
             <p
               className={`${myriad.className} font-semibold text-black/50 border-b-1 border-black/20 pb-20`}
             >
@@ -292,7 +294,9 @@ export default function Home() {
             </p>
           </div>
           <div className="p-4 text-center">
-            <h2 className="text-3xl mb-5">bmw.ca</h2>
+            <h2 className="text-3xl mb-5  md:text-4xl lg:text-5xl md:pb-10">
+              bmw.ca
+            </h2>
             <p
               className={`${myriad.className} font-semibold text-black/50 pb-5`}
             >
@@ -313,9 +317,9 @@ export default function Home() {
         </div>
       </div>
       {/* ------- camera ------- */}
-      <div className="p-5 flex flex-col md:flex-row mb-10">
+      <div className="p-5 flex flex-col md:flex-row mb-10 lg:m-20">
         <div className="md:w-1/2 p-4 lg:pr-0">
-          <h2 className="text-3xl mb-5">
+          <h2 className="text-3xl mb-5 md:text-4xl lg:text-5xl">
             From time to time, I love to snap a photo here and there. Film and
             digital. 🫶🏻 both.
           </h2>
@@ -344,6 +348,80 @@ export default function Home() {
               </p>
             </div>
           ))}
+        </div>
+      </div>
+      {/* ------ collage ------  */}
+      <div className="m-2 md:m-10 flex flex-col gap-2 md:gap-10  lg:m-40 lg:mt-2">
+        <div className="flex gap-2 md:gap-10">
+          <div className="w-1/2 overflow-hidden rounded-[8px] md:rounded-2xl">
+            <Image
+              src="/images/pic1.jpg"
+              alt="Plane illustration"
+              width={1600}
+              height={2431}
+            />
+          </div>
+          <div className="w-1/2 flex flex-col gap-2 md:gap-10">
+            <div className="w-full h-full overflow-hidden rounded-[8px] md:rounded-2xl">
+              <Image
+                className="h-[100%] object-cover"
+                src="/images/pic2.jpg"
+                alt="Plane illustration"
+                width={800}
+                height={526}
+              />
+            </div>
+            <div className="w-full h-full overflow-hidden rounded-[8px] md:rounded-2xl">
+              <Image
+                className="h-[100%] object-cover"
+                src="/images/pic3.jpg"
+                alt="Plane illustration"
+                width={800}
+                height={527}
+              />
+            </div>
+          </div>
+        </div>
+        <div className="overflow-hidden rounded-[8px] md:rounded-2xl">
+          <Image
+            className=""
+            src="/images/pic4.jpg"
+            alt="Plane illustration"
+            width={1600}
+            height={1092}
+          />
+        </div>
+        <div>
+          <div className="flex gap-2 md:gap-10">
+            <div className="w-1/2 overflow-hidden rounded-[8px] md:rounded-2xl">
+              <Image
+                src="/images/pic5.jpg"
+                alt="Plane illustration"
+                width={800}
+                height={1216}
+              />
+            </div>
+            <div className="w-1/2 flex flex-col gap-2 md:gap-10">
+              <div className="w-full h-full overflow-hidden rounded-[8px] md:rounded-2xl">
+                <Image
+                  className="h-[100%] object-cover"
+                  src="/images/pic6.jpg"
+                  alt="Plane illustration"
+                  width={1080}
+                  height={711}
+                />
+              </div>
+              <div className="w-full h-full overflow-hidden rounded-[8px] md:rounded-2xl">
+                <Image
+                  className="h-[100%] object-cover"
+                  src="/images/pic7.jpg"
+                  alt="Plane illustration"
+                  width={800}
+                  height={526}
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
