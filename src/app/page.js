@@ -6,7 +6,6 @@ import plane3 from "/public/images/plane3.svg";
 import plane4 from "/public/images/plane4.svg";
 import plane5 from "/public/images/plane5.svg";
 
-
 const apple = localFont({
   src: "../../public/fonts/AppleGaramond-Light.ttf",
   variable: "--font-apple",
@@ -15,6 +14,13 @@ const myriad = localFont({
   src: "../../public/fonts/MyriadPro-Light.otf",
   variable: "--font-myriad",
 });
+
+const cameras = [
+  { model: "FUJI X-E4", icon: "/images/fuji.svg" },
+  { model: "MJU-1", icon: "/images/mju.svg" },
+  { model: "NIKON F100", icon: "/images/nikon.svg" },
+  { model: "IPHONE 13", icon: "/images/iphone.svg" },
+];
 
 const images = [
   { id: 1, url: "/images/comp1.svg" },
@@ -257,7 +263,7 @@ export default function Home() {
       </div>
 
       {/* ------ sports and car ------ */}
-      <div className="border-b-1 border-black/50 mt-12">
+      <div className="border-b-1 border-black/10 mt-12 mb-15">
         <div className="flex flex-col gap-10 p-5 pb-0 md:p-10">
           <p className="text-2xl md:text-4xl lg:text-5xl text-center">
             Airbus is the most comprehensive project I have worked on with the
@@ -304,6 +310,40 @@ export default function Home() {
             width={3200}
             height={1763}
           />
+        </div>
+      </div>
+      {/* ------- camera ------- */}
+      <div className="p-5 flex flex-col md:flex-row mb-10">
+        <div className="md:w-1/2 p-4 lg:pr-0">
+          <h2 className="text-3xl mb-5">
+            From time to time, I love to snap a photo here and there. Film and
+            digital. 🫶🏻 both.
+          </h2>
+          <p className={`${myriad.className}`}>
+            Love to take good photos. Especially analog-film ones. It is not
+            just about grain and unique colors but it is about the journey from
+            the moment I press the shutter button till I see scanned photos on
+            display. Since I am a dad of a 3-year-old girl and I am mostly
+            taking photos of her, analog is not the best option to snap a good
+            one. That&apos;s why my fuji and iPhone are my most used cameras
+            these days.
+          </p>
+        </div>
+        <div className="md:w-1/2 justify-around md:justify-center flex gap-5 md:gap-10 lg:gap-15 mt-5">
+          {cameras.map(({ model, icon }) => (
+            <div key={model}>
+              <Image
+                className="w-20"
+                src={icon}
+                alt="Plane illustration"
+                width={150}
+                height={150}
+              />
+              <p className={`${myriad.className} text-center font-light`}>
+                {model}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </main>

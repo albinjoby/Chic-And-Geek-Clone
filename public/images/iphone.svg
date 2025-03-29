@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1225px" height="1095px" viewBox="0 0 1225 1095" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Artboard Copy</title>
+    <g id="Artboard-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iphone_camera" transform="translate(188.000000, 122.000000)" stroke="#000000" stroke-width="10">
+            <path d="M606.430906,5 C689.7092,5 719.978194,13.4942654 750.442348,29.7866728 C780.52108,45.8729549 804.127045,69.4789201 820.213327,99.5576525 C836.505735,130.021806 845,160.2908 845,243.569094 L845,606.430906 C845,689.7092 836.505735,719.978194 820.213327,750.442348 C804.127045,780.52108 780.52108,804.127045 750.442348,820.213327 C719.978194,836.505735 689.7092,845 606.430906,845 L243.569094,845 C160.2908,845 130.021806,836.505735 99.5576525,820.213327 C69.4789201,804.127045 45.8729549,780.52108 29.7866728,750.442348 C13.4942654,719.978194 5,689.7092 5,606.430906 L5,243.569094 C5,160.2908 13.4942654,130.021806 29.7866728,99.5576525 C45.8729549,69.4789201 69.4789201,45.8729549 99.5576525,29.7866728 C130.021806,13.4942654 160.2908,5 243.569094,5 Z" id="Rectangle"></path>
+            <g id="Group-3" transform="translate(89.000000, 98.000000)">
+                <ellipse id="Oval" cx="172.391137" cy="172.294" rx="167.391137" ry="167.294"></ellipse>
+                <ellipse id="Oval-Copy-3" cx="172.391137" cy="172.294" rx="130.050096" ry="129.974"></ellipse>
+                <ellipse id="Oval-Copy-6" cx="172.391137" cy="172.294" rx="10.0084568" ry="10"></ellipse>
+                <ellipse id="Oval-Copy-4" fill="#FFFFFF" cx="578.962226" cy="90.636" rx="62.0377736" ry="62"></ellipse>
+                <ellipse id="Oval-Copy-5" fill="#FFFFFF" cx="79.0385356" cy="600.23" rx="16.7822736" ry="16.77"></ellipse>
+            </g>
+            <g id="Group-3-Copy" transform="translate(414.000000, 407.000000)">
+                <circle id="Oval" cx="172.5" cy="172.5" r="167.5"></circle>
+                <circle id="Oval-Copy-3" cx="172.5" cy="172.5" r="130.135379"></circle>
+                <circle id="Oval-Copy-7" cx="172.5" cy="172.5" r="19"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
