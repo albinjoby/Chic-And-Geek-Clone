@@ -424,6 +424,23 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* ----- icon ----- */}
+      <div className="h-[80vh] md:h-[90vh] lg:h-[100vh] flex items-center justify-center">
+        <div className="">
+          <div className="flex justify-center mb-10">
+            <Image
+              className="size-30 md:size-40 lg:size-50"
+              src="/images/icon.svg"
+              alt="icon"
+              height={100}
+              width={100}
+            />
+          </div>
+          <h2 className="text-center text-4xl md:text-6xl lg:text-7xl">
+            Icons, Pictograms and KDE. Yep, that&apos;s how it started.
+          </h2>
+        </div>
+      </div>
     </main>
   );
 }
