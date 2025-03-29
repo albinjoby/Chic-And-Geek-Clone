@@ -1,6 +1,11 @@
 import Image from "next/image";
 import localFont from "next/font/local";
-import Carousel from "./components/Carousel";
+import plane1 from "/public/images/plane1.svg";
+import plane2 from "/public/images/plane2.svg";
+import plane3 from "/public/images/plane3.svg";
+import plane4 from "/public/images/plane4.svg";
+import plane5 from "/public/images/plane5.svg";
+
 
 const apple = localFont({
   src: "../../public/fonts/AppleGaramond-Light.ttf",
@@ -107,7 +112,7 @@ export default function Home() {
           </div>
           <div className="w-full h-full bg-gray-100 flex items-center justify-center">
             <svg
-            style={{ width: "10vw", height: "10vh" }}
+              style={{ width: "10vw", height: "10vh" }}
               width="72"
               height="65"
               viewBox="0 0 72 65"
@@ -189,6 +194,60 @@ export default function Home() {
               technical realisation.
             </p>
           </div>
+        </div>
+      </div>
+      {/* ---------- plane ---------- */}
+      <div className="flex m-10 mt-30">
+        <div className="w-fill md:w-1/2  flex flex-col p-5 pt-0 gap-10">
+          <div className="md:hidden bg-gray-200 p-8 lg:p-12 rounded-2xl text-center">
+            <p className="text-2xl md:text-3xl lg:text-4xl">
+              Airplanes, helicopters, Mars rovers, and artificial intelligence
+              under the same roof -well organized and visually consistent.
+            </p>
+          </div>
+          <Image
+            className="w-fit"
+            src={plane1}
+            alt="Plane illustration"
+            width={300}
+            height={300}
+          />
+          <Image
+            className="w-fit"
+            src={plane3}
+            alt="Plane illustration"
+            width={300}
+            height={300}
+          />
+          <Image
+            className="w-fit"
+            src={plane4}
+            alt="Plane illustration"
+            width={300}
+            height={300}
+          />
+        </div>
+        <div className="hidden md:flex w-1/2 flex-col p-5 pt-0 gap-10">
+          <div className="bg-gray-200 p-8 lg:p-12 rounded-2xl text-center">
+            <p className="text-2xl md:text-3xl lg:text-4xl">
+              Airplanes, helicopters, Mars rovers, and artificial intelligence
+              under the same roof -well organized and visually consistent.
+            </p>
+          </div>
+          <Image
+            className="w-fit"
+            src={plane2}
+            alt="Plane illustration"
+            width={300}
+            height={300}
+          />
+          <Image
+            className="w-fit"
+            src={plane5}
+            alt="Plane illustration"
+            width={300}
+            height={300}
+          />
         </div>
       </div>
     </main>
