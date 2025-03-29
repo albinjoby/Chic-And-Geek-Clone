@@ -5,8 +5,7 @@ import plane2 from "/public/images/plane2.svg";
 import plane3 from "/public/images/plane3.svg";
 import plane4 from "/public/images/plane4.svg";
 import plane5 from "/public/images/plane5.svg";
-import lowes from "/public/images/lowes.svg";
-import ipad from "/public/images/ipad.svg";
+import { Instagram } from "react-feather";
 
 const apple = localFont({
   src: "../../public/fonts/AppleGaramond-Light.ttf",
@@ -22,6 +21,30 @@ const cameras = [
   { model: "MJU-1", icon: "/images/mju.svg" },
   { model: "NIKON F100", icon: "/images/nikon.svg" },
   { model: "IPHONE 13", icon: "/images/iphone.svg" },
+];
+
+const contacts = [
+  {
+    id: 1,
+    name: "Linkedin",
+    description:
+      "Although I don't post frequently on LinkedIn, I would like to connect with you.",
+    icon: "/images/linkedin.jpg",
+  },
+  {
+    id: 2,
+    name: "Instagram",
+    description:
+      "No design stuff here. Everyday life, hobbies and my daughter Marta.",
+    icon: "/images/insta.jpg",
+  },
+  {
+    id: 3,
+    name: "Pudding Studio",
+    description:
+      "Want to collaborate? Visit pudding's website and we can start from there.",
+    icon: "/images/pudding.jpg",
+  },
 ];
 
 const images = [
@@ -506,6 +529,81 @@ export default function Home() {
             height={10}
             width={10}
           />
+        </div>
+        <p className={`text-center p-5 md:p-10 ${myriad.className}`}>
+          I spent 2011 and 2012 as part of the HUGE NYC team (full-time,
+          in-house) as Senior Art Director. There I have worked on projects for
+          J.P. Morgan, Nickelodeon, Panasonic, and Nivea, to name a few, but the
+          project I played a significant role in was the Lowe&apos;s iOS tablet
+          app. The iPad was still a new product on the market, and most mobile
+          applications of that time would only present their enlarged-stretched
+          version on the tablet. That was not the case here, and the app is
+          completely optimized for the tablet screen so that all the visible
+          surface is being utilized.
+        </p>
+      </div>
+      {/* ----- contact pen ------ */}
+      <div className="bg-gray-100 flex flex-col h-[200px] md:h-[300px]">
+        <div className="relative mt-20">
+          <Image
+            className="w-[50%] h-auto absolute right-0"
+            src="/images/pen.png"
+            alt="icon"
+            height={273}
+            width={1684}
+          />
+        </div>
+      </div>
+      {/* ----- contact-details ----- */}
+      <div className="bg-gray-100 flex items-center justify-center pb-20">
+        <div>
+          <div className="pl-5 pr-5 text-center">
+            <h2 className="text-4xl md:text-7xl pb-5">
+              Curious to see and hear more? Let&apos;s connect.
+            </h2>
+            <p className="md:text-2xl">
+              The work I have shown you above is just a tiny part that I am
+              particularly proud of. I didn&apos;t want to make this page super
+              long and tedious, so if you are curious to see more, feel free to
+              reach out.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-gray-100 flex flex-col md:flex-row">
+        <div className="flex justify-center items-center">
+          <div className="md:hidden aspect-square rounded-2xl border-1 border-gray-400/40 bg-white m-5 text-center relative">
+            <h2 className="text-4xl p-5 pb-2">Email</h2>
+            <p className={`${myriad.className} p-5`}>
+              Call me oldfashioned, but i love emails.
+              nenad.grujicic@mac&middot;com
+            </p>
+            <Image
+              className="absolute bottom-0 left-1/2 -translate-x-1/2 transform"
+              src="/images/email.svg"
+              width={200}
+              height={200}
+              alt="image"
+            />
+          </div>
+        </div>
+        <div className="flex justify-center items-center flex-col md:flex-row">
+          {contacts.map(({ id, name, description, icon }) => (
+            <div
+              key={id}
+              className="max-w-[358px] aspect-square rounded-2xl border-1 border-gray-400/40 bg-white m-5 text-center relative"
+            >
+              <h2 className="text-4xl p-5 pb-2">{name}</h2>
+              <p className={`${myriad.className} p-5`}>{description}</p>
+              <Image
+                className="absolute bottom-0 left-1/2 -translate-x-1/2 transform"
+                src={icon}
+                width={200}
+                height={200}
+                alt={name}
+              />
+            </div>
+          ))}
         </div>
       </div>
     </main>
