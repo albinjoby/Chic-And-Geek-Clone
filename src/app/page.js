@@ -172,7 +172,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="bg-black text-white md:m-10 md:rounded-2xl">
+      <div className="bg-black text-white md:m-10 md:mb-30 md:rounded-2xl">
         <div className="flex flex-col md:flex-row">
           <div className="p-10 md:pr-0 md:pt-15">
             <Image
@@ -197,8 +197,8 @@ export default function Home() {
         </div>
       </div>
       {/* ---------- plane ---------- */}
-      <div className="flex m-10 mt-30">
-        <div className="w-fill md:w-1/2  flex flex-col p-5 pt-0 gap-10">
+      <div className="flex m-5 lg:m-10 mt-30">
+        <div className="w-fill md:w-1/2 flex flex-col p-0 md:p-5 md:pt-0 pt-0 gap-5 md:gap-10">
           <div className="md:hidden bg-gray-200 p-8 lg:p-12 rounded-2xl text-center">
             <p className="text-2xl md:text-3xl lg:text-4xl">
               Airplanes, helicopters, Mars rovers, and artificial intelligence
