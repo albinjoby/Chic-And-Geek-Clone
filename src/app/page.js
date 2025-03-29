@@ -145,6 +145,8 @@ export default function Home() {
           </p>
         </div>
       </div>
+
+      {/* ------- app sotre ------ */}
       <div className="flex flex-col md:flex-row-reverse mb-20">
         <div>
           <div className="w-[300px]">
@@ -172,30 +174,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="bg-black text-white md:m-10 md:mb-30 md:rounded-2xl">
-        <div className="flex flex-col md:flex-row">
-          <div className="p-10 md:pr-0 md:pt-15">
-            <Image
-              className="md:size-50 lg:size-35"
-              src="/images/medal.svg"
-              alt="images"
-              height={150}
-              width={100}
-            />
-          </div>
-          <div className="p-10 pt-0 md:pt-15">
-            <h2 className="text-4xl md:text-6xl">Statement of the jury</h2>
-            <p className="text-gray-300 mt-5 md:text-2xl">
-              This elaborate website integrates all of the company&apos;s
-              product communication into a single portal, thus providing a
-              seamless customer experience. The site&apos;s design is of
-              superior quality and reflects the brand&apos;s core values down to
-              the last detail, from the standpoint of form, content and
-              technical realisation.
-            </p>
-          </div>
-        </div>
-      </div>
+
       {/* ---------- plane ---------- */}
       <div className="flex m-5 lg:m-10 mt-30">
         <div className="w-fill md:w-1/2 flex flex-col p-0 md:p-5 md:pt-0 pt-0 gap-5 md:gap-10">
@@ -247,6 +226,83 @@ export default function Home() {
             alt="Plane illustration"
             width={300}
             height={300}
+          />
+        </div>
+      </div>
+
+      {/* ------- medal ------- */}
+      <div className="bg-black text-white md:m-10 md:mb-30 md:rounded-2xl">
+        <div className="flex flex-col md:flex-row">
+          <div className="p-10 md:pr-0 md:pt-15">
+            <Image
+              className="md:size-50 lg:size-35"
+              src="/images/medal.svg"
+              alt="images"
+              height={150}
+              width={100}
+            />
+          </div>
+          <div className="p-10 pt-0 md:pt-15">
+            <h2 className="text-4xl md:text-6xl">Statement of the jury</h2>
+            <p className="text-gray-300 mt-5 md:text-2xl">
+              This elaborate website integrates all of the company&apos;s
+              product communication into a single portal, thus providing a
+              seamless customer experience. The site&apos;s design is of
+              superior quality and reflects the brand&apos;s core values down to
+              the last detail, from the standpoint of form, content and
+              technical realisation.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* ------ sports and car ------ */}
+      <div className="border-b-1 border-black/50 mt-12">
+        <div className="flex flex-col gap-10 p-5 pb-0 md:p-10">
+          <p className="text-2xl md:text-4xl lg:text-5xl text-center">
+            Airbus is the most comprehensive project I have worked on with the
+            IBM iX, Berlin team. But it is certainly not the only one.
+          </p>
+          <div className="overflow-hidden rounded-[5px]">
+            <Image
+              className="w-full"
+              src="/images/sports.jpg"
+              alt="images"
+              height={3200}
+              width={1800}
+            />
+          </div>
+          <div className="p-4 text-center">
+            <h2 className="text-3xl mb-5">Bundesliga Sportcast Media Hub</h2>
+            <p
+              className={`${myriad.className} font-semibold text-black/50 border-b-1 border-black/20 pb-20`}
+            >
+              The Sportscast media hub of the German Bundesliga is a web
+              application allowing media and partners to access every Bundesliga
+              football match video easily. Not only that, but it also (with the
+              assistance of Watson AI) enables an easy search for the key
+              moments. These clips can be perfectly trimmed and ready for
+              further distribution and presentation in just a few clicks.
+            </p>
+          </div>
+          <div className="p-4 text-center">
+            <h2 className="text-3xl mb-5">bmw.ca</h2>
+            <p
+              className={`${myriad.className} font-semibold text-black/50 pb-5`}
+            >
+              I have always enjoyed participating and being part of a team that
+              is working on a pitch project, and bmw.ca is my most beloved one.
+              It was my first project at IBM iX, Berlin, where I met wonderful
+              people with whom it was a pleasure to work and bring this project
+              to a successful conclusion.
+            </p>
+          </div>
+          <Image
+            className="w-full"
+            src="/images/car.png"
+            alt="images"
+            width={3200}
+            height={1763}
           />
         </div>
       </div>
